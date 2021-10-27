@@ -102,15 +102,12 @@ li + li {
 }
 
 .incorrect {
-  list-style-type: "❌ ";
+  text-decoration: line-through;
+  text-decoration-color: rgba(0, 0, 0, 0.35);
 }
 
 q {
   quotes: "‘" "’";
-}
-
-.legal {
-  font-weight: 700;
 }
 
 strong {
