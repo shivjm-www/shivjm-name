@@ -46,7 +46,6 @@ body {
   padding: 1em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -58,11 +57,7 @@ h1 {
 }
 
 p {
-  line-height: 1.4;
-}
-
-.test:nth-child(n + 2) {
-  margin-top: 2em;
+  line-height: 1.5;
 }
 
 .name {
@@ -106,24 +101,46 @@ li + li {
   margin-top: 0.25em;
 }
 
-.correct {
-  list-style-type: "✅ ";
-}
-
 .incorrect {
-  list-style-type: "❌ ";
+  text-decoration: line-through;
+  text-decoration-color: rgba(0, 0, 0, 0.35);
 }
 
 q {
   quotes: "‘" "’";
 }
 
-.legal {
+strong {
   font-weight: 700;
 }
 
-strong {
-  font-weight: 700;
+footer {
+  font-size: 0.7em;
+  text-align: right;
+  margin-top: auto;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+}
+
+:visited {
+  color: #800080;
+}
+
+a:hover, a:focus {
+  text-decoration-thickness: 0.25em;
+}
+
+a:focus {
+  outline: 1px solid;
+}
+
+a:active {
+  color: red;
 }
 
 /* https://google-webfonts-helper.herokuapp.com/fonts/mada?subsets=latin */
