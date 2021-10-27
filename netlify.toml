@@ -1,0 +1,7 @@
+[build]
+publish = "_site/"
+command = "npm install && eleventy"
+
+[build.environment]
+NODE_VERSION = "14.16.1"
+NPM_VERSION = "7.10.0"
