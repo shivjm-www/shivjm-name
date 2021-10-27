@@ -60,10 +60,6 @@ p {
   line-height: 1.4;
 }
 
-.test:nth-child(n + 2) {
-  margin-top: 2em;
-}
-
 .name {
   font-size: 2em;
   margin-top: 0.5em;
