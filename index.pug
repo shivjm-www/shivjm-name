@@ -9,7 +9,7 @@ html(lang="en")
     link(href="/assets/styles/index.css" rel="stylesheet" type="text/css")
   body
     h1= title
-    p My legal name is #[q.legal Shiv Jha Mathur]:
+    p My legal name is #[q.full Shiv Jha Mathur]:
     p.name
       ruby.given
         | Shiv
@@ -19,9 +19,9 @@ html(lang="en")
       ruby.family
         | Jha Mathur
         rp (
-        rt family name, legal
+        rt family name
         rp )
-    p When the exact legal name is not required, I write my family name with a hyphen to emphasize that #[q Jha] and #[q Mathur] cannot be separated:
+    p Outside of legal documents, I add a hyphen to indicate that #[q Jha] and #[q Mathur] must be kept together, making it #[q.full Shiv Jha-Mathur]:
     p.name
       ruby.given
         | Shiv
@@ -31,13 +31,9 @@ html(lang="en")
       ruby.family
         | Jha-Mathur
         rp (
-        rt family name, preferred
+        rt family name
         rp )
-    p#correct You might call me:
-    ul.correct
-      for name in names.correct
-        li= name
-    p#incorrect Please #[strong do not] call me:
+    p In other words, I have a two-part last name and a single first name. I do not have a middle name or two first names. So, for example, #[strong my name is not]:
     ul.incorrect
       for name in names.incorrect
         li= name

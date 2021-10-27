@@ -1,19 +1,9 @@
-correct:
-  - Shiv
-  - Mr. Shiv
-  - Mr. Jha Mathur
-  - "Mr. Jha-Mathur"
-  - Shiv JM
-  - Shiv J.M.
-  - Shiv Jha Mathur
-  - "Shiv Jha-Mathur"
 incorrect:
   - Shivjha
   - Shiv Jha
   - Shiv Mathur
   - Shiv J. Mathur
-  - Mr. Shiv Jha
+  - Shiv Jha M.
+  - Mathur, Shiv Jha
   - Mr. Jha
   - Mr. Mathur
-  - Mr. Shiv Mathur
-  - Mr. Shiv J. Mathur
