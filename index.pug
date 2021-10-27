@@ -1,0 +1,45 @@
+- const title = "‘Shiv Jha-Mathur’: Demystifying The Hyphen";
+doctype html
+html(lang="en")
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="description" content="A handy guide to using my name.")
+    link(href="/index.css" rel="stylesheet" type="text/css")
+    link(href="https://fonts.googleapis.com/css2?family=Mada:wght@400;600;700;900&display=swap" rel="stylesheet")
+  body
+    h1= title
+    p My legal name is #[q.legal Shiv Jha Mathur]:
+    p.name
+      ruby.given
+        | Shiv
+        rp (
+        rt given name
+        rp )
+      ruby.family
+        | Jha Mathur
+        rp (
+        rt family name, legal
+        rp )
+    p When the exact legal name is not required, I write my family name with a hyphen to emphasize that #[q Jha] and #[q Mathur] cannot be separated:
+    p.name
+      ruby.given
+        | Shiv
+        rp (
+        rt given name
+        rp )
+      ruby.family
+        | Jha-Mathur
+        rp (
+        rt family name, preferred
+        rp )
+    p#correct You might call me:
+    ul.correct
+      for name in names.correct
+        li= name
+    p#incorrect Please #[strong do not] call me:
+    ul.incorrect
+      for name in names.incorrect
+        li= name
+    p Thank you.
