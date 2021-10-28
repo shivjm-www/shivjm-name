@@ -8,34 +8,35 @@ html(lang="en")
     meta(name="description" content="A handy guide to using my name.")
     link(href="/assets/styles/index.css" rel="stylesheet" type="text/css")
   body
-    h1= title
-    p My legal name is #[q.full Shiv Jha Mathur]:
-    p.name
-      ruby.given
-        | Shiv
-        rp (
-        rt given name
-        rp )
-      ruby.family
-        | Jha Mathur
-        rp (
-        rt family name
-        rp )
-    p Outside of legal documents, I add a hyphen to indicate that #[q Jha] and #[q Mathur] must be kept together, making it #[q.full Shiv Jha-Mathur]:
-    p.name
-      ruby.given
-        | Shiv
-        rp (
-        rt given name
-        rp )
-      ruby.family
-        | Jha-Mathur
-        rp (
-        rt family name
-        rp )
-    p In other words, I have a two-part last name and a single first name. I do not have a middle name or two first names. So, for example, #[strong my name is not]:
-    ul.incorrect
-      for name in names.incorrect
-        li= name
+    main
+      h1= title
+      p My legal name is #[q.full Shiv Jha Mathur]:
+      p.name
+        ruby.given
+          | Shiv
+          rp (
+          rt given name
+          rp )
+        ruby.family
+          | Jha Mathur
+          rp (
+          rt family name
+          rp )
+      p Outside of legal documents, I add a hyphen to indicate that #[q Jha] and #[q Mathur] must be kept together, making it #[q.full Shiv Jha-Mathur]:
+      p.name
+        ruby.given
+          | Shiv
+          rp (
+          rt given name
+          rp )
+        ruby.family
+          | Jha-Mathur
+          rp (
+          rt family name
+          rp )
+      p In other words, I have a two-part last name and a single first name. I do not have a middle name or two first names. So, for example, #[strong my name is not]:
+      ul.incorrect
+        for name in names.incorrect
+          li= name
     footer
       | Built with #[a(href="https://pugjs.org/") Pug] and #[a(href="https://www.11ty.dev/") 11ty]. Hosted by #[a(href="https://www.netlify.com/") Netlify].
