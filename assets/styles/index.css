@@ -50,7 +50,7 @@ body {
 
 main {
   max-width: 45em;
-  margin: 0 auto;
+  margin: 0 auto 2em;
 }
 
 h1 {
@@ -123,6 +123,8 @@ footer {
   text-align: right;
   margin-top: auto;
   max-width: none;
+  border-top: 0.1em solid;
+  padding-top: 1em;
 }
 
 a {
