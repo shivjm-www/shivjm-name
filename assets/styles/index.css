@@ -114,6 +114,7 @@ li + li {
 .incorrect {
   text-decoration: line-through;
   text-decoration-color: rgba(0, 0, 0, 0.35);
+  text-align: center;
 }
 
 q {
