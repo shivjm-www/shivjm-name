@@ -1,3 +1,13 @@
+mixin annotated-name(given, family)
+  p.name
+    span.name__name.name__name--given= given
+    span.name__punctation= " "
+    span.name__annotation.name__annotation--given (given name)
+    span.name__punctation= " "
+    span.name__name.name__name--family= family
+    span.name__punctation= " "
+    span.name__annotation.name__annotation--family (family name)
+
 - const title = "‘Shiv Jha-Mathur’: Demystifying The Hyphen";
 doctype html
 html(lang="en")
@@ -11,29 +21,9 @@ html(lang="en")
     main
       h1= title
       p My legal name is #[q.full Shiv Jha Mathur]:
-      p.name
-        ruby.given
-          | Shiv
-          rp (
-          rt given name
-          rp )
-        ruby.family
-          | Jha Mathur
-          rp (
-          rt family name
-          rp )
+      +annotated-name("Shiv", "Jha Mathur")
       p Outside of legal documents, I add a hyphen to indicate that #[q Jha] and #[q Mathur] must be kept together, making it #[q.full Shiv Jha-Mathur]:
-      p.name
-        ruby.given
-          | Shiv
-          rp (
-          rt given name
-          rp )
-        ruby.family
-          | Jha-Mathur
-          rp (
-          rt family name
-          rp )
+      +annotated-name("Shiv", "Jha-Mathur")
       p In other words, I have a two-part last name and a single first name. I do not have a middle name or two first names. So, for example, #[strong my name is not]:
       ul.incorrect
         for name in names.incorrect

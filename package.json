@@ -17,7 +17,7 @@
   },
   "homepage": "https://gitlab.com/shivjm-www/shivjm-name#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "@sardine/eleventy-plugin-tinycss": "^1.5.0",
     "js-yaml": "^4.1.0",
     "prettier": "^2.4.1",
