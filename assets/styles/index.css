@@ -2,40 +2,40 @@
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-    all: unset;
-    display: revert;
+  all: unset;
+  display: revert;
 }
 
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
     Remove list styles (bullets/numbers)
     in case you use it combine with normalize.css
 */
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 /* For images to not be able to exceed their container */
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* removes spacing between cells in tables */
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
-    white-space: revert;
+  white-space: revert;
 }
-
 
 body {
   font-size: 110%;
@@ -71,30 +71,55 @@ p {
 }
 
 .name {
-  font-size: 2em;
-  margin-top: 0.5em;
-  display: flex;
-  flex-flow: row nowrap;
+  font-size: 3.5rem;
   justify-content: center;
   align-items: center;
-}
-
-ruby {
-  font-weight: 900;
-  padding: 0 1ch;
-}
-
-ruby + ruby {
-  border-left: 0.05em solid;
-}
-
-rp, rt {
-  font-size: 0.5em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: [annotation] auto [name] auto [extra] 0;
+  text-align: right;
   text-align: center;
-  font-weight: 600;
+  margin: 0.5em auto 0;
+  max-width: max-content;
 }
 
-p + *, ul + * {
+.name__name,
+.name__annotation {
+  padding: 0 2rem;
+}
+
+.name__annotation {
+  font-size: 0.5em;
+  grid-row: annotation / name;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  line-height: 1;
+}
+
+.name__name {
+  grid-row-start: name;
+  font-weight: 900;
+  padding-bottom: 0.1rem;
+  line-height: 1.1;
+}
+
+.name__name--given,
+.name__annotation--given {
+  border-right: 0.175rem solid;
+}
+
+.name__name--family,
+.name__annotation--family {
+  /* text-align: left; */
+}
+
+.name__punctuation {
+  display: none;
+  grid-row-start: extra;
+}
+
+p + *,
+ul + * {
   margin-top: 1em;
 }
 
@@ -145,7 +170,8 @@ a {
   color: #800080;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration-thickness: 0.25em;
 }
 
@@ -161,37 +187,38 @@ a:active {
 
 /* mada-regular - latin */
 @font-face {
-  font-family: 'Mada';
+  font-family: "Mada";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('/assets/fonts/mada-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/mada-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("/assets/fonts/mada-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/mada-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* mada-600 - latin */
 @font-face {
-  font-family: 'Mada';
+  font-family: "Mada";
   font-style: normal;
   font-weight: 600;
-  src: local(''),
-       url('/assets/fonts/mada-v11-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/mada-v11-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("/assets/fonts/mada-v11-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/mada-v11-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* mada-700 - latin */
 @font-face {
-  font-family: 'Mada';
+  font-family: "Mada";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('/assets/fonts/mada-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/mada-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("/assets/fonts/mada-v11-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/mada-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* mada-900 - latin */
 @font-face {
-  font-family: 'Mada';
+  font-family: "Mada";
   font-style: normal;
   font-weight: 900;
-  src: local(''),
-       url('/assets/fonts/mada-v11-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/mada-v11-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("/assets/fonts/mada-v11-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/mada-v11-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
