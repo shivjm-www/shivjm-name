@@ -75,8 +75,7 @@ p {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: [annotation] auto [name] auto [extra] 0;
+  grid-template-rows: [annotation] auto [name] auto;
   text-align: right;
   text-align: center;
   margin: 0.5em auto 0;
@@ -111,11 +110,6 @@ p {
 .name__name--family,
 .name__annotation--family {
   /* text-align: left; */
-}
-
-.name__punctuation {
-  display: none;
-  grid-row-start: extra;
 }
 
 p + *,
