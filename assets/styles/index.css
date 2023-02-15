@@ -104,12 +104,12 @@ p {
 
 .name__name--given,
 .name__annotation--given {
-  border-right: 0.175rem solid;
 }
 
 .name__name--family,
 .name__annotation--family {
   /* text-align: left; */
+  border-left: 0.175rem solid;
 }
 
 p + *,
