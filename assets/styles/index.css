@@ -99,17 +99,17 @@ p {
   grid-row-start: name;
   font-weight: 900;
   padding-bottom: 0.1rem;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .name__name--given,
 .name__annotation--given {
-  border-right: 0.175rem solid;
 }
 
 .name__name--family,
 .name__annotation--family {
   /* text-align: left; */
+  border-left: 0.175rem solid;
 }
 
 p + *,
