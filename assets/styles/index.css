@@ -55,7 +55,7 @@ body {
 }
 
 main {
-  max-width: 45em;
+  max-width: min(100%, 45em);
   margin: 0 auto 2em;
 }
 
@@ -76,10 +76,11 @@ p {
   align-items: center;
   display: grid;
   grid-template-rows: [annotation] auto [name] auto;
+  align-items: stretch;
   text-align: right;
   text-align: center;
   margin: 0.5em auto 0;
-  max-width: max-content;
+  max-width: min(max-content, 100%);
 }
 
 .name__name,
