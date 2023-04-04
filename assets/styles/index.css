@@ -76,6 +76,7 @@ p {
   align-items: center;
   display: grid;
   grid-template-rows: [annotation] auto [name] auto;
+  align-items: stretch;
   text-align: right;
   text-align: center;
   margin: 0.5em auto 0;
