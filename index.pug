@@ -22,12 +22,11 @@ html(lang="en")
       h1= title
       p Hello. My legal name is #[q.full Shiv Jha Mathur]:
       +annotated-name("Shiv", "Jha Mathur")
-      p Outside of legal documents, I add a hyphen to indicate that #[q Jha] and #[q Mathur] must be kept together, making it #[q.full Shiv Jha-Mathur]:
+      p In other words, I have a two-part last name and a solitary first name. I do not have a middle name or two first names. Outside of legal documents, I usually shorten it to #[q Shiv J.M.] or add a hyphen to indicate that #[q Jha] and #[q Mathur] #[strong must] be kept together, making it #[q.full Shiv Jha-Mathur]:
       +annotated-name("Shiv", "Jha-Mathur")
-      p In other words, I have a two-part last name and a single first name. I do not have a middle name or two first names. So, for example, #[strong my name is not]:
+      p Having encountered many different corruptions of it over the years, I should emphasize that #[strong my name is not]:
       ul.incorrect
         for name in names.incorrect
           li= name
-      p I often abbreviate it as #[q Shiv J.M.] (as in the #[abbr URL] of this page).
     footer
       | Built with #[a(href="https://pugjs.org/") Pug] and #[a(href="https://www.11ty.dev/") 11ty] (#[a(href="https://gitlab.com/shivjm-www/shivjm-name/") source on GitLab]). Hosted by #[a(href="https://www.netlify.com/") Netlify].
