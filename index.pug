@@ -20,7 +20,7 @@ html(lang="en")
   body
     main
       h1= title
-      p My legal name is #[q.full Shiv Jha Mathur]:
+      p Hello. My legal name is #[q.full Shiv Jha Mathur]:
       +annotated-name("Shiv", "Jha Mathur")
       p Outside of legal documents, I add a hyphen to indicate that #[q Jha] and #[q Mathur] must be kept together, making it #[q.full Shiv Jha-Mathur]:
       +annotated-name("Shiv", "Jha-Mathur")
@@ -28,5 +28,6 @@ html(lang="en")
       ul.incorrect
         for name in names.incorrect
           li= name
+      p I often abbreviate it as #[q Shiv J.M.] (as in the #[abbr URL] of this page).
     footer
       | Built with #[a(href="https://pugjs.org/") Pug] and #[a(href="https://www.11ty.dev/") 11ty] (#[a(href="https://gitlab.com/shivjm-www/shivjm-name/") source on GitLab]). Hosted by #[a(href="https://www.netlify.com/") Netlify].
