@@ -71,9 +71,9 @@ p {
 }
 
 .name {
-  font-size: 3.5rem;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
   display: grid;
   grid-template-rows: [annotation] auto [name] auto;
   align-items: stretch;
@@ -81,6 +81,12 @@ p {
   text-align: center;
   margin: 0.5em auto 0;
   max-width: min(max-content, 100%);
+}
+
+@media (min-width: 35em) {
+  .name {
+    font-size: 3.5rem;
+  }
 }
 
 .name__name,
